@@ -15,7 +15,7 @@ RUN npm run build
 FROM node:12-alpine AS application
 
 COPY --from=base /app/package*.json ./
-RUN npm install --only=production && npm install pm2 -g
+RUN npm install --only=production && npm install pm2@4.5.0 -g
 COPY --from=base /app/dist ./dist
 
 USER node
