@@ -1,0 +1,8 @@
+# exclude local node modules folder
+node_modules
+
+# exclude build folder
+dist
+
+# exclude npm debug log file
+npm-debug.log
